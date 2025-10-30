@@ -1,6 +1,7 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 import Counter from "~/counter/counter";
+import Server from "Server/Server";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,5 +11,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Counter></Counter>;
+  return <div><Counter></Counter><Server></Server></div>;
 }
