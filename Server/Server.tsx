@@ -3,6 +3,7 @@ import { getData } from "../helpers/requests";
 
 
 
+
 export default function Server() {
     const [serverText, setServerText] = useState("");
 
@@ -19,3 +20,13 @@ export default function Server() {
         <div> The server says: {serverText}</div>
     )
 };
+
+
+
+
+
+
+
+
+
+

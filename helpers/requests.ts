@@ -37,8 +37,6 @@ export async function getCounter(){
 
 
 
-
-
 export async function postCounter(counter: number){
 
 
