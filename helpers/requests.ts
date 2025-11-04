@@ -46,11 +46,14 @@ export async function postCounter(counter: number){
   try {
     const response = await fetch(url, {
       headers: {
-        "Content-type": "applications/json"
+        "Content-type": "application/json"
       },
       method: "POST",
       body: JSON.stringify({counter: counter})
     });
+
+
+
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
